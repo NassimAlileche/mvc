@@ -48,9 +48,8 @@ abstract class Controller implements iController {
     * @var Associative Array
     */
     private $dataView = array(
-        "site_name"       => "Moo meuh...",
+        "site_name"       => "PHP MVC...",
         "page_title"      => "Accueil",
-        "page_menu_items" => array(),
         "message"         => "",
     );
 
@@ -283,10 +282,10 @@ abstract class Controller implements iController {
      */
     private function addFilesRender(&$html) {
         foreach( $this->scriptView as $s) {
-            $html = str_replace('</body>', "\n<script type=\"text/javascript\" src=\"" . WEB_ROOT . "js/$s\"></script></body>", $html);
+            $html = str_replace('</body>', "\t<script type=\"text/javascript\" src=\"" . WEB_ROOT . "js/$s\"></script>\n</body>", $html);
         }
         foreach( $this->styleView as $s) {
-            $html = str_replace('</head>', "\n<link rel=\"stylesheet\" type=\"text/css\" href=\"" . WEB_ROOT . "css/$s\"></head>", $html);
+            $html = str_replace('</head>', "\t<link rel=\"stylesheet\" type=\"text/css\" href=\"" . WEB_ROOT . "css/$s\">\n</head>", $html);
         }
     }
     

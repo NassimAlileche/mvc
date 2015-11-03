@@ -1,0 +1,8 @@
+##
+##
+
+RewriteEngine On
+RewriteBase /mvc/Public
+
+RewriteCond %{REQUEST_FILENAME} !-f
+RewriteRule ^(.*)$ index.php?page=$1 [L,QSA] 

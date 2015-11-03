@@ -42,21 +42,22 @@ Github repos
 	line-height: 40px;
 	margin-left: 20px;
 }
-.module #repos_container {
+/*
+.github #repos_container {
 	width: 100%;
 	min-height: 400px;
 	padding: 0;
 	margin: 0 auto;
 	background-color: rgba(77, 125, 89, 0.3);
-	/*border: 1px solid #144152;*/
+	border: 1px solid #144152;
 }
-.module #repos_container ul {
+.github #repos_container ul {
 	list-style-type: none;
 	display: block;
 	text-decoration: none;
 	padding-left: 0px;
 }
-.module #repos_container ul li {
+.github #repos_container ul li {
 	padding: 10px;
 	padding-left: 20px;
 	background-color: #eaeaea;
@@ -64,16 +65,17 @@ Github repos
 	min-height: 50px;
 	line-height: 50px;
 }
-.module #repos_container ul li:hover {
+.github #repos_container ul li:hover {
 	background-color: #418988;
 }
-.module #repos_container ul li a {
+.github #repos_container ul li a {
 	text-decoration: none;
 	font-size: 15px;
 	min-height: 50px;
 }
-.module #repos_container ul li a,
-.module #repos_container ul li a:focus,
-.module #repos_container ul li a:visited {
+.github #repos_container ul li a,
+.github #repos_container ul li a:focus,
+.github #repos_container ul li a:visited {
 	color: #252529;
 }
+*/
