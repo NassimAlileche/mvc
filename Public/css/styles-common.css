@@ -1,0 +1,27 @@
+/*
+Effet de survol de l'image (zoom-in léger)
+-------------------------------------------------------------------*/
+.zoom-in-effect {
+	/*
+	background: url('path/to/image');
+	width: ;
+	height: ;
+	margin: ;
+	padding: ;
+	*/
+	transition: background-size .5s ease-out;
+	background-size: 100% 100%;
+	overflow: hidden;
+	cursor: pointer;
+}
+.zoom-in-effect:hover {
+	background-size: 110% 110%;
+	background-origin: border-box;
+}
+
+.fade-out-effect {
+
+}
+.fade-out-effect:hover {
+
+}
