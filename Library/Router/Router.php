@@ -31,8 +31,8 @@ class Router {
      * @return  String
      */
     static private function getControllerPath($name, $strict=true) {
-        $basefile = ($strict)? ucfirst( strtolower($name) ) : $name;
-        return APP_ROOT . 'Controllers' . DIRECTORY_SEPARATOR . $basefile . '.php';
+        //$name = ($strict)? ucfirst( strtolower($name) ) : $name;
+        return APP_ROOT . 'Controllers' . DIRECTORY_SEPARATOR . $name . '.php';
     }
 
     /**
@@ -46,8 +46,8 @@ class Router {
      * @return  String
      */
     static private function getControllerClassName($name, $strict=true) {
-        $class = ($strict)? ucfirst( strtolower($name) ) : $name;
-        return "\Application\Controllers\\" . $class;
+        //$name = ($strict)? ucfirst( strtolower($name) ) : $name;
+        return "\Application\Controllers\\" . $name;
     }
     
     /**
@@ -61,8 +61,8 @@ class Router {
      * @return  String
      */
     static private function getModulePath($name, $strict=true) {
-        $basefile = ($strict)? ucfirst( strtolower($name) ) : $name;
-        return APP_ROOT . 'Modules' . DIRECTORY_SEPARATOR . $basefile . '.php';
+        //$name = ($strict)? ucfirst( strtolower($name) ) : $name;
+        return APP_ROOT . 'Modules' . DIRECTORY_SEPARATOR . $name . '.php';
     }
     
     /**
@@ -76,8 +76,8 @@ class Router {
      * @return  String
      */
     static private function getModuleClassName($name, $strict=true) {
-        $class = ($strict)? ucfirst( strtolower($name) ) : $name;
-        return "\Application\Modules\\" . $class;
+        //$name = ($strict)? ucfirst( strtolower($name) ) : $name;
+        return "\Application\Modules\\" . $name;
     }
     
     /**
@@ -91,8 +91,8 @@ class Router {
      * @return  String
      */
     static private function getActionName($name, $strict=true) {
-        $action = ($strict)? strtolower($name) : $name;        
-        return $action . "Action";
+        //$name = ($strict)? strtolower($name) : $name;        
+        return $name . "Action";
     }
 
     /**
